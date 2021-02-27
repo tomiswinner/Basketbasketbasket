@@ -70,7 +70,7 @@ a:hover {
 /*contentsブロック
 ---------------------------------------------------------------------------*/
 
-/* 自身で変更加えた点① */
+/* 変更① index.html*/
 #contents {
 	height: 100%;
 	width: 100%;
@@ -107,9 +107,10 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	border-right:none;
+	border-width: thin;
 	border-color: white;
 	width: 100%;
-	height: 9%;
+	height: 1.5rem;
 }
 
 .input01{
@@ -127,6 +128,7 @@ a:hover {
 .sbtn2{
 	background-color:white;
 	border-color:white;
+	border:none;
 	width: 10%;
 	height: 100%;  
 	/* paddingとかなにかがおかしいのかな？ */
@@ -141,9 +143,12 @@ a:hover {
 	background-size: auto 90%;
 	background-repeat: no-repeat; */
 }
-.areaSelecter{
+.areaSelector{
 	width:50%;
-	height:100%
+	height:100%;
+	background-color: transparent;
+	color:white;
+	border-color: white;
 }
 
 .feeCheck{
@@ -152,10 +157,14 @@ a:hover {
 
 .courtWidth{
 	height:100%;
+	background-color: transparent;
+	color:white;
+	border-color: white;
+
 }
 
 
-/* 〆① */
+/* 変更①〆 */
 
 /*トップページのcontentsブロック。Whats's Newブロックの表示箇所です。*/
 
@@ -303,6 +312,7 @@ header .icon img {
 	top: 0px;
 }
 }
+
 /*mainブロック*/
 #main {
 	overflow: auto;
@@ -456,6 +466,71 @@ footer a {text-decoration: none;}
 /*テーブル
 ---------------------------------------------------------------------------*/
 /*テーブル１行目に入った見出し部分（※caption）*/
+
+
+/* 変更② company.html */
+#selectorInResults{
+	margin-bottom: 1rem;
+	display: flex;
+	align-items: left;
+	/* background-color: red; */
+}
+
+.listForResults{
+	width:100%;
+}
+
+.courtResult{
+	display: block;
+	width:100%;
+	margin-bottom: 2rem;
+}
+.courtTitle{
+	/* background-color: red; */
+	font-weight: bolder;
+	letter-spacing: 0.15rem;
+	display:block;
+	padding:0;
+	text-align: left;
+}
+.courtContent{
+	padding-top:0.5rem;
+	padding-bottom: 0.5rem;
+	width:100%;
+	letter-spacing: 0.15rem;
+	border-bottom:solid;
+	border-top: solid;
+	/* border-width: thick; */
+	border-color:#c1bc9e;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.courtImg{
+	width:30%;
+	height:100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.courtInfo{
+	width:60%;
+}
+
+.courtInfo_div{
+	line-height: 1.2rem;
+	/* border-color: green;
+	border:solid; */
+	text-align: left;
+	display: block;
+	padding-left:1rem;
+	padding-bottom:0.2rem;
+	font-weight: lighter;
+}
+
+
 .ta1 caption {
 	border: 1px solid #fff;	/*テーブルの枠線の幅、線種、色*/
 	border-bottom: none;	/*下線だけ消す*/
@@ -474,18 +549,32 @@ footer a {text-decoration: none;}
 .ta1 {
 	table-layout: fixed;
 	width: 100%;
+	height:70%;
 	margin: 0 auto 20px;
+	border-collapse: separate;
+	border-spacing: 0 3rem;
 }
 .ta1, .ta1 td, .ta1 th {
 	word-break: break-all;
 	border: 1px solid #fff;	/*テーブルの枠線の幅、線種、色*/
-	padding: 10px;	/*ボックス内の余白*/
+	padding: 0.5rem 0.5rem;	/*ボックス内の余白*/
 }
 /*ta1の左側ボックス*/
 .ta1 th {
-	width: 140px;		/*幅*/
+	font-size: larger;
+	width: 10rem;		/*幅*/
 	text-align: center;	/*センタリング*/
+	background-color: #000;
 }
+.ta1 td{
+	background-color:#000;
+	margin-bottom: auto;
+}
+
+
+/* 変更②〆 */
+
+
 
 /*フォーム関連
 ---------------------------------------------------------------------------*/
@@ -571,8 +660,19 @@ ol {
 	padding: 0 20px 20px 45px;
 }
 
+/* 変更② company.html */
+
 /*box
 ---------------------------------------------------------------------------*/
+.boxForCompany {
+	background: #000;				/*背景色（古いブラウザ用）*/
+	background: rgba(0,0,0,0.7);	/*背景色。0,0,0は黒の事で0.7は色が70%出た状態の事。*/
+	padding: 5%;					/*ボックス内の余白*/
+	/* margin-bottom: 30px;			ボックスの下に空けるスペース */
+	border: 1px solid #fff;						/*線の幅、線種、色（古いブラウザ用）*/
+	border: 1px solid rgba(255,255,255,0.3);	/*線の幅、線種、色。255,255,255は白の事で0.3は色が30%出た状態の事。*/
+}
+
 .box {
 	background: #000;				/*背景色（古いブラウザ用）*/
 	background: rgba(0,0,0,0.7);	/*背景色。0,0,0は黒の事で0.7は色が70%出た状態の事。*/
@@ -582,6 +682,9 @@ ol {
 	border: 1px solid rgba(255,255,255,0.3);	/*線の幅、線種、色。255,255,255は白の事で0.3は色が30%出た状態の事。*/
 
 }
+
+/*変更②〆  */
+
 
 /*その他
 ---------------------------------------------------------------------------*/
